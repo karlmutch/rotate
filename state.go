@@ -5,9 +5,6 @@ import (
 	"unsafe"
 )
 
-const ioctlReadTermios = syscall.TIOCGETA
-const ioctlWriteTermios = syscall.TIOCSETA
-
 type State struct {
 	termios syscall.Termios
 }
